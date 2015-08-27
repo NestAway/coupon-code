@@ -4,8 +4,8 @@ require 'digest/sha1'
 
 module CouponCode
   SYMBOL = '0123456789ABCDEFGHJKLMNPQRTUVWXY'
-  PARTS  = 3
-  LENGTH = 4
+  PARTS  = 1
+  LENGTH = 6
 
   def self.generate(options = { parts: PARTS })
     num_parts = options.delete(:parts)
